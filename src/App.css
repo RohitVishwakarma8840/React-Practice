@@ -1,0 +1,50 @@
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column; /* Add this to stack display and container vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  width: 100%; /* Ensure the display takes full width */
+  height: 40px;
+  font-size: 30px; /* Add unit 'px' */
+  text-align: right;
+  border: 1px solid black;
+  color:black;
+  border-radius: 4px; /* Match button border-radius */
+  padding-right: 10px;
+  padding-left: 5px;
+  margin-bottom: 20px; /* Add space between display and buttons */
+  background-color: #fff; /* Add background color for contrast */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Use 4 equal columns */
+  gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: black; /* Ensure only one background color */
+}
